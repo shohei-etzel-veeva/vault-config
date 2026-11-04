@@ -1,0 +1,13 @@
+Vsmfield subtype__v (
+   label('Subtype'),
+   active(true),
+   description('The document subtype — the second level under type__v (e.g. Guidance, Master Form, Fillable Form). Use to filter within a type. IMPORTANT: subtype__v is meaningful only together with type__v — the same subtype label can appear under different types.'),
+   example_values(),
+   synonyms('subtype',
+         'sub type',
+         'document subtype'),
+   target('subtype__v'),
+   target_label('Subtype'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

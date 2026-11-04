@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vwf:stepdetails xmlns:vwf="VeevaVault">
+  <vwf:dialog type="task">
+    <vwf:label>Review and annotate</vwf:label>
+    <vwf:controls>
+      <vwf:control name="review_and_annotate_these_documents__c" label="Review and Annotate these documents" type="instructions">
+        <vwf:instructions>Review and Annotate these documents</vwf:instructions>
+      </vwf:control>
+      <vwf:control name="date_approval_due_date__c" label="label" type="date">
+        <vwf:datefield type="date" />
+        <vwf:offset>
+          <vwf:amount>0</vwf:amount>
+          <vwf:unit>days</vwf:unit>
+        </vwf:offset>
+      </vwf:control>
+    </vwf:controls>
+  </vwf:dialog>
+  <vwf:assignment participant="part_approver__c" excludeowner="false" />
+  <vwf:assignmentType type="every" />
+  <vwf:updateSharingSettingsRules>
+    <vwf:rule event="taskAssignment" operator="add">
+      <vwf:roles>
+        <vwf:role>Doclifecyclerole.reviewer__v</vwf:role>
+      </vwf:roles>
+    </vwf:rule>
+  </vwf:updateSharingSettingsRules>
+  <vwf:notifications />
+  <vwf:reminders />
+  <vwf:completeWithoutViewing value="false" />
+  <vwf:taskRequirement requirement="required" />
+  <vwf:enablePromptExclusionStateTypes value="false" />
+  <vwf:enablePromptInclusionDocTypes value="false" />
+</vwf:stepdetails>

@@ -1,0 +1,11 @@
+Vsmrelationship report_usages__sys (
+   label('Report Usages'),
+   active(true),
+   cardinality('ONE_TO_MANY'),
+   description('Links each report to individual Report Usage records that track details about each individual run of the report.'),
+   join_object(),
+   synonyms('usage'),
+   target('report_usages__sysr'),
+   target_label('Report Usages'),
+   target_object('report_usage__sys')
+);

@@ -1,0 +1,10 @@
+RECREATE Messagegroup redactiontype__sys (
+   label('Redaction Type Messages'),
+   active(true),
+   Message(@Message/fill_color__sys.mdl),
+   Message(@Message/outline_color__sys.mdl),
+   Message(@Message/overlay_text__sys.mdl),
+   Message(@Message/redactiontype__sys.mdl),
+   Message(@Message/redactiontype_plural__sys.mdl),
+   Message(@Message/text_color__sys.mdl)
+);

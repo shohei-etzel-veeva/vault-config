@@ -1,0 +1,13 @@
+Vsmfield language__v (
+   label('Language'),
+   active(true),
+   description('The language(s) of the document (e.g. English, Chinese (Simplified)). Use to filter documents by language.'),
+   example_values(),
+   synonyms('language',
+         'languages',
+         'locale'),
+   target('language__v'),
+   target_label('Language'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

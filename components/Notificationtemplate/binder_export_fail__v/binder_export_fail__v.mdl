@@ -1,0 +1,22 @@
+RECREATE Notificationtemplate binder_export_fail__v (
+   label('binderExportFail'),
+   active(true),
+   description(),
+   email_preferences('every_occurrence__sys'),
+   referenced_component(),
+   subject('Veeva Vault: Binder Export Error (${docNameNoLink})'),
+   notification('<p>Binder export failed for ${docName}.</p>
+<p>Please see notification email for more details.</p>'),
+   email_body('<p><b>Vault: </b>${vaultName} (${uiBaseExtUrl})
+<br>
+<b>Notification: </b>Binder Export Error</b></p>
+
+<p>${recipientTitle} ${recipientName},</p>
+
+<p>An error occurred while trying to prepare your binder ${docName} for export. Please contact your Vault Administrator.</p>
+<p>Error: ${binderExportErrorMessage}</p>
+
+<p>You can see all your Notifications on your Vault home page under <a href="${notificationHome}">Notifications</a>.</p>'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

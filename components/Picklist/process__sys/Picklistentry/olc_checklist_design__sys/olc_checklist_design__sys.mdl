@@ -1,0 +1,5 @@
+Picklistentry olc_checklist_design__sys (
+   value('Checklist Design'),
+   order(3),
+   active(true)
+);

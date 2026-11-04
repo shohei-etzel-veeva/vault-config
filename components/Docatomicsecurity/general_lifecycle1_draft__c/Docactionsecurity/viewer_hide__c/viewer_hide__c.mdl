@@ -1,0 +1,7 @@
+Docactionsecurity viewer_hide__c (
+   label('Viewer-Hide'),
+   active(true),
+   role('Doclifecyclerole.viewer__v'),
+   type('hide__v'),
+   lifecycle_actions('Doclifecyclestateuseraction.draft__c.approve__c')
+);

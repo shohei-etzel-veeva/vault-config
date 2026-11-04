@@ -1,0 +1,8 @@
+Objectworkflowstep change_statein_approval_to_draft__c (
+   label('State Change:In Approval To Draft'),
+   type('contentaction'),
+   next_steps('Objectworkflowstep.approval_completed_changes_needed__c'),
+   tags(),
+   step_detail(@step_detail.xml),
+   description()
+);

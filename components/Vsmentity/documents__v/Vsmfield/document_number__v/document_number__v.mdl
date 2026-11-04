@@ -1,0 +1,14 @@
+Vsmfield document_number__v (
+   label('Document Number'),
+   active(true),
+   description('The system-assigned unique document number (e.g. VV-QUAL-00091). Use to look up a specific document by its number. Auto-generated and unique per document.'),
+   example_values(),
+   synonyms('document number',
+         'doc number',
+         'number',
+         'doc id'),
+   target('document_number__v'),
+   target_label('Document Number'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

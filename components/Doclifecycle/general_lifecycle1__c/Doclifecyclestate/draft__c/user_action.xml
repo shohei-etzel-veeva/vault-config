@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+    <rule>
+        <actions>
+            <action type="CHECK_USER_ACTION">
+                <UserAction actionType="StateChange" newState="approved__c" label="Approve" publicKey="approve__c" />
+            </action>
+            <action type="CHECK_USER_ACTION">
+                <UserAction actionType="RunWorkflow" workflowKey="approval__v" flowType="object" label="Send For Approval" publicKey="send_for_approval__c" />
+            </action>
+            <action type="CHECK_USER_ACTION">
+                <UserAction actionType="RunWorkflow" workflowKey="review__v" flowType="object" label="Send For Review" publicKey="send_for_review__c" />
+            </action>
+        </actions>
+    </rule>
+</rules>

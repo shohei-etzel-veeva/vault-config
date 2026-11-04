@@ -1,0 +1,16 @@
+Vsmfield name__v (
+   label('Name'),
+   active(true),
+   description('The document''s name as shown in the library and list views — the primary human-readable label. Use to find a document by name or to display which document a result refers to.'),
+   example_values('Global Cloud Spend',
+         'Business Process Monitoring',
+         'All Customers'),
+   synonyms('name',
+         'document name',
+         'called',
+         'named'),
+   target('name__v'),
+   target_label('Name'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

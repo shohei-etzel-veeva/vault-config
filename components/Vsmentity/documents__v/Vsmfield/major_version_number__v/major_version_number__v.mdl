@@ -1,0 +1,13 @@
+Vsmfield major_version_number__v (
+   label('Major Version Number'),
+   active(true),
+   description('The major version number of the document version (the X in vX.Y). Combine with minor_version_number__v for the full version, e.g. 1.0. Use to find or filter documents by version.'),
+   example_values(),
+   synonyms('major version',
+         'version',
+         'major'),
+   target('major_version_number__v'),
+   target_label('Major Version Number'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

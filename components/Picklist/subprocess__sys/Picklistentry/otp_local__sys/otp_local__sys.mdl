@@ -1,0 +1,6 @@
+Picklistentry otp_local__sys (
+   value('Local'),
+   order(10),
+   active(true),
+   controlling_entries('olc_connection__sys')
+);

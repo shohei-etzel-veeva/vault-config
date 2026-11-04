@@ -1,0 +1,13 @@
+Vsmfield filename__v (
+   label('File Name'),
+   active(true),
+   description('The original source file name of the document (e.g. Global Cloud Spend.png). Use to find a document by its uploaded file name.'),
+   example_values(),
+   synonyms('file name',
+         'filename',
+         'source file'),
+   target('filename__v'),
+   target_label('File Name'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

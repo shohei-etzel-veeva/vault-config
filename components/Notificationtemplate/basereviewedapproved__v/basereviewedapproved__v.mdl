@@ -1,0 +1,12 @@
+RECREATE Notificationtemplate basereviewedapproved__v (
+   label('BASE-ReviewedApproved'),
+   active(true),
+   description(),
+   email_preferences('summary__sys'),
+   referenced_component('Object.envelope__sys'),
+   subject('Notification: Review completed, changes not required'),
+   notification('Review of Documents <b>${multiDocDocumentsList}</b> have been completed. Changes are not required. The Owner will start the approval process.'),
+   email_body('<p>${notificationMessage}</p>'),
+   entity_type('object'),
+   notification_category('none__sys')
+);

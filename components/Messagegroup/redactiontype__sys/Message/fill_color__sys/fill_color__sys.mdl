@@ -1,0 +1,6 @@
+Message fill_color__sys (
+   label(),
+   active(true),
+   default_value('Fill Color'),
+   system_managed(false)
+);

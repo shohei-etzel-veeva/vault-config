@@ -1,0 +1,16 @@
+RECREATE Vsmentity report__sys (
+   label('Report'),
+   active(true),
+   description('Represents a single report record in Vault that users can run, edit, or share, based off of an available report type. Reports allow users to analyze data about documents, object records and workflows.'),
+   synonyms('analysis',
+      'reporting'),
+   target('Object.report__sys'),
+   target_label('Report'),
+   Vsmfield(@Vsmfield/class__sys.mdl),
+   Vsmfield(@Vsmfield/description__sys.mdl),
+   Vsmfield(@Vsmfield/flash_runs_as__sys.mdl),
+   Vsmfield(@Vsmfield/is_shared__sys.mdl),
+   Vsmfield(@Vsmfield/report_type__sys.mdl),
+   Vsmfield(@Vsmfield/tags__sys.mdl),
+   Vsmrelationship(@Vsmrelationship/report_usages__sys.mdl)
+);

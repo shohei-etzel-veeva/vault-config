@@ -1,0 +1,14 @@
+Vsmfield type__v (
+   label('Type'),
+   active(true),
+   description('The document type — the top level of Vault''s type/subtype/classification hierarchy that categorizes every document. Use to filter or count documents by kind. Pairs with subtype__v and classification__v for finer categorization.'),
+   example_values(),
+   synonyms('type',
+         'document type',
+         'kind',
+         'category'),
+   target('type__v'),
+   target_label('Type'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

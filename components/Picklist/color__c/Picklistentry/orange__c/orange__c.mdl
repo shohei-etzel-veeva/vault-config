@@ -1,0 +1,5 @@
+Picklistentry orange__c (
+   value('Orange'),
+   order(0),
+   active(true)
+);

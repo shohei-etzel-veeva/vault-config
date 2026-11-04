@@ -1,0 +1,8 @@
+Objectworkflowstep any_changes_required__c (
+   label('Any changes required'),
+   type('decision'),
+   next_steps(),
+   tags(),
+   step_detail(@step_detail.xml),
+   description()
+);

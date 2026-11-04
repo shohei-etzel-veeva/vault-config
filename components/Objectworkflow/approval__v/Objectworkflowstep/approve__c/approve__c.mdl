@@ -1,0 +1,8 @@
+Objectworkflowstep approve__c (
+   label('Approve'),
+   type('contenttask'),
+   next_steps('Objectworkflowstep.any_changes_required__c'),
+   tags(),
+   step_detail(@step_detail.xml),
+   description()
+);

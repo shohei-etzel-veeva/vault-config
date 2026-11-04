@@ -1,0 +1,27 @@
+RECREATE Notificationtemplate dynamic_autofiling_failed__v (
+   label('Binder Auto-filing Failure'),
+   active(true),
+   description(),
+   email_preferences('every_occurrence__sys'),
+   referenced_component(),
+   subject('Veeva Vault: Binder Auto-filing Error (${docNameNoLink})'),
+   notification('<p>Binder auto-filing failed for ''${docName}''.</p>
+<b>Reason: </b>too many documents matched your autofiling criteria (max: ${maxDocsCount}, matched: ${addedDocsCount}).<br>
+Please adjust your filing rules to reduce the number of matched documents.'),
+   email_body('<p><b>Vault: </b>${vaultName} (${uiBaseExtUrl})
+<br>
+<b>Notification: </b>Binder auto-filing error</b></p>
+
+<p>${recipientTitle} ${recipientName},</p>
+
+<p>Binder auto-filing failed for ''${docName}'' on ${autofileEndDateTime}.
+
+<p>${autofileAddedDocsHeader} ${autofileAddedDocs}</p>
+
+<p><b>Reason: </b>too many documents matched your autofiling criteria (max: ${maxDocsCount}, matched: ${addedDocsCount}).<br>
+Please adjust your filing rules to reduce the number of matched documents.</p>
+
+<p><a href="${notificationHome}">Click here to see all your Vault notifications</a> </p>'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

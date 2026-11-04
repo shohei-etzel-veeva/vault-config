@@ -1,0 +1,12 @@
+RECREATE Tab process_monitor__v (
+   active(true),
+   all_view_label('All Process Views'),
+   enable_global_search(false),
+   global_search_placeholder(''),
+   label('Process Monitor'),
+   my_view_label('My Process Views'),
+   object('process_view__sys'),
+   order(204),
+   parent(),
+   recent_view_label('Recent Process Views')
+);

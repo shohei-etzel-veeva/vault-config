@@ -1,0 +1,14 @@
+RECREATE Page process_monitor__sys (
+   label('Process Monitor'),
+   active(true),
+   client_distribution(),
+   default_client_code('process_monitor__sys'),
+   description(),
+   disable_chrome(false),
+   disable_configuration(false),
+   disable_permission(false),
+   page_client_code(),
+   page_controller(),
+   server_code('Pagecontrollercode.com.veeva.vault.system.page.ProcessMonitorPage'),
+   url_path_name('process-monitor')
+);

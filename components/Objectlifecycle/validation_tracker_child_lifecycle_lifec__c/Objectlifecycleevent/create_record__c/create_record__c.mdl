@@ -1,0 +1,5 @@
+Objectlifecycleevent create_record__c (
+   event('create_record'),
+   rule(@rule.xml),
+   order(0)
+);

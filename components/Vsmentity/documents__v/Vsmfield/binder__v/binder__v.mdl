@@ -1,0 +1,12 @@
+Vsmfield binder__v (
+   label('Binder'),
+   active(true),
+   description('Boolean flag indicating whether the record is a binder (a container of documents) rather than a single document. Use to include or exclude binders — e.g. filter binder__v = false for individual documents.'),
+   example_values(),
+   synonyms('binder',
+         'is binder'),
+   target('binder__v'),
+   target_label('Binder'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

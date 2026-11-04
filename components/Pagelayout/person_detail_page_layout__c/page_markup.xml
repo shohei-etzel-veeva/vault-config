@@ -1,0 +1,19 @@
+<vault:page xmlns:vault="VeevaVault" controller="Object.person__sys">
+    <vault:section title="Details" name="details__c">
+        <vault:detailform type="Two-Columns">
+            <vault:field reference="name__v" />
+            <vault:field reference="first_name__sys" />
+            <vault:field reference="last_name__sys" />
+            <vault:field reference="email__sys" />
+            <vault:control reference="duplicate_person_email_field_control__sys" name="duplicate_person_email_field_control__c" />
+            <vault:field reference="manager__sys" />
+            <vault:field reference="image__sys" />
+            <vault:field reference="language__sys" />
+            <vault:field reference="locale__sys" />
+            <vault:field reference="mobile_phone__sys" />
+            <vault:field reference="timezone__sys" />
+            <vault:field reference="vault_user__sys" />
+            <vault:field reference="status__v" />
+        </vault:detailform>
+    </vault:section>
+</vault:page>

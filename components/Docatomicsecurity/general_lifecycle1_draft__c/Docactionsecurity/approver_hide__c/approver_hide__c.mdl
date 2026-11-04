@@ -1,0 +1,7 @@
+Docactionsecurity approver_hide__c (
+   label('Approver-Hide'),
+   active(true),
+   role('Doclifecyclerole.approver__v'),
+   type('hide__v'),
+   lifecycle_actions('Doclifecyclestateuseraction.draft__c.approve__c')
+);

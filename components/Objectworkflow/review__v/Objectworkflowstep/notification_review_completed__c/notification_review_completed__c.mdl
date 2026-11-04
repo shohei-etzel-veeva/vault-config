@@ -1,0 +1,8 @@
+Objectworkflowstep notification_review_completed__c (
+   label('Review completed, changes not required'),
+   type('notification'),
+   next_steps('Objectworkflowstep.end__c'),
+   tags(),
+   step_detail(@step_detail.xml),
+   description()
+);

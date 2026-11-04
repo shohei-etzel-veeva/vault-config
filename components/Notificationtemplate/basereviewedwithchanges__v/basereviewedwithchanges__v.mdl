@@ -1,0 +1,12 @@
+RECREATE Notificationtemplate basereviewedwithchanges__v (
+   label('BASE-ReviewedWithChanges'),
+   active(true),
+   description(),
+   email_preferences('every_occurrence__sys'),
+   referenced_component('Object.envelope__sys'),
+   subject('Notification: Review completed, changes required'),
+   notification('Review of Documents <b>${multiDocDocumentsList}</b> have been completed. Changes are required. Comments have been captured as annotations on the documents.'),
+   email_body('<p>${notificationMessage}</p>'),
+   entity_type('object'),
+   notification_category('none__sys')
+);

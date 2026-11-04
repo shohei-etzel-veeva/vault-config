@@ -1,0 +1,5 @@
+Picklistentry dlc_general__sys (
+   value('General'),
+   order(9),
+   active(true)
+);

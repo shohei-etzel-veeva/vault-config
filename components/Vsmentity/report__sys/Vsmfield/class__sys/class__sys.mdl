@@ -1,0 +1,11 @@
+Vsmfield class__sys (
+   label('Class'),
+   active(true),
+   description('Differentiates reports from end-user facing reports (Standard) and Report Views (View) used in multi-pass report types.'),
+   example_values(),
+   synonyms(''),
+   target('class__sys'),
+   target_label('Class'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

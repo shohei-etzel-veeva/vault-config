@@ -1,0 +1,21 @@
+RECREATE Notificationtemplate staged_document_created__v (
+   label('Staged Document Created'),
+   active(true),
+   description(),
+   email_preferences('summary__sys'),
+   referenced_component(),
+   subject('Veeva Vault: Staged document created (${docName})'),
+   notification('FTP Inbox created a staged document: ${docName}
+<br>Access your Document Inbox, and classify the document to enter it into your library.'),
+   email_body('<p><b>Vault: </b>${vaultName} (${uiBaseExtUrl})
+<br>
+<b>Notification: </b>FTP Inbox: Staged Document Created</b></p>
+
+<p>${recipientTitle} ${recipientName},</p>
+
+<p>${notificationMessage}</p>
+
+<p><a href="${notificationHome}">Click here to see all your Vault notifications</a> </p>'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

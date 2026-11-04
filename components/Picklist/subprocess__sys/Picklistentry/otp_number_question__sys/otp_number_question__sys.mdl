@@ -1,0 +1,6 @@
+Picklistentry otp_number_question__sys (
+   value('Number Question'),
+   order(13),
+   active(true),
+   controlling_entries('olc_question_design__sys')
+);

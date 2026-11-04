@@ -1,0 +1,12 @@
+RECREATE Notificationtemplate baseapprovalcompleteapproval__c (
+   label('BASE-Approval-CompleteApproval'),
+   active(true),
+   description(),
+   email_preferences('every_occurrence__sys'),
+   referenced_component(),
+   subject('New Task: Assess Approval Outcome for "${docNameNoLink}"'),
+   notification('Based on the approval outcomes for <b>${docName}</b>, please determine if its state should be set to Approved. Otherwise, <b>${docName}</b> will be returned to the owner for updates.'),
+   email_body('You have been assigned a task for <b>${docName}</b>. ${notificationMessage}</p> Due date: ${taskDueDate}<br> Document owner: ${docOwnerName}<br> Workflow owner: ${workflowInitiatorName}<br>'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

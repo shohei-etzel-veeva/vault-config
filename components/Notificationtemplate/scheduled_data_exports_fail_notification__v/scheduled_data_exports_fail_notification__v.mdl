@@ -1,0 +1,32 @@
+RECREATE Notificationtemplate scheduled_data_exports_fail_notification__v (
+   label('Scheduled Data Exports Fail Notification'),
+   active(true),
+   description('Scheduled Data Exports Job Fail Notification Template'),
+   email_preferences('summary__sys'),
+   referenced_component(),
+   subject('Planlanan Veri Dışa Aktarmaları İşiniz için şu sonuç var: ${jobResult}'),
+   notification('<p>Planlanan Veri Dışa Aktarmaları İşiniz için şu sonuç var: ${jobResult}</p>
+<p>Ayrıntılar: ${detailMessage}</p>
+<ul>
+<li>Dışa Aktarma Başlangıç Zamanı: ${startTime}</li>
+<li>Süre: ${duration}</li>
+<li>İş Kimliği: ${jobId}</li>
+<li>Dışa Aktarılan Varlıkların Sayısı: ${entitiesExported}</li>
+<li>Dışa Aktarılamayan Varlıkların Sayısı: ${entitiesFailed}</li>
+<li>Planlanan Veri Dışa Aktarmaları: <a href="${urlExportResults}">Dışa aktarılan veri</a></li>
+</ul>
+'),
+   email_body('<p>Planlanan Veri Dışa Aktarmaları İşiniz için şu sonuç var: ${jobResult}</p>
+<p>Ayrıntılar: ${detailMessage}</p>
+<ul>
+<li>Dışa Aktarma Başlangıç Zamanı: ${startTime}</li>
+<li>Süre: ${duration}</li>
+<li>İş Kimliği: ${jobId}</li>
+<li>Dışa Aktarılan Varlıkların Sayısı: ${entitiesExported}</li>
+<li>Dışa Aktarılamayan Varlıkların Sayısı: ${entitiesFailed}</li>
+<li>Planlanan Veri Dışa Aktarmaları: <a href="${urlExportResults}">Dışa aktarılan veri</a></li>
+</ul>
+'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

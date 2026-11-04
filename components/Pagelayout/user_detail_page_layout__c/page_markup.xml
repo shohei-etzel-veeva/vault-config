@@ -1,0 +1,86 @@
+<vault:page xmlns:vault="VeevaVault" controller="Object.user__sys">
+    <vault:section title="Domain User" name="domain_user__v">
+        <vault:domainUser />
+    </vault:section>
+    <vault:section title="General Info" name="general_info__c">
+        <vault:detailform type="Two-Columns">
+            <vault:field reference="name__v" />
+            <vault:field reference="first_name__sys" />
+            <vault:field reference="last_name__sys" />
+            <vault:field reference="username__sys" />
+            <vault:field reference="email__sys" />
+            <vault:field reference="company__sys" />
+            <vault:field reference="title__sys" />
+            <vault:field reference="alias__sys" />
+            <vault:field reference="manager__sys" />
+            <vault:field reference="image__sys" />
+            <vault:field reference="language__sys" />
+            <vault:field reference="locale__sys" />
+            <vault:field reference="timezone__sys" />
+            <vault:field reference="location__sys" />
+            <vault:field reference="office_phone__sys" />
+            <vault:field reference="mobile_phone__sys" />
+            <vault:field reference="fax__sys" />
+            <vault:field reference="preferred_currency__sys" />
+            <vault:field reference="holiday_schedule__sys" />
+            <vault:field reference="preferred_tab_col__sys" />
+            <vault:field reference="layout_profile__sys" />
+        </vault:detailform>
+    </vault:section>
+    <vault:section title="Account Activation" name="account_activation__c">
+        <vault:detailform type="Two-Columns">
+            <vault:field reference="activation_date__sys" />
+            <vault:field reference="inactivation_date__sys" />
+            <vault:field reference="last_login__sys" />
+            <vault:field reference="state__v" />
+            <vault:field reference="status__v" />
+            <vault:field reference="send_welcome_email__sys" />
+        </vault:detailform>
+    </vault:section>
+    <vault:section title="Details" name="details__c">
+        <vault:detailform type="Two-Columns">
+            <vault:field reference="license_type__sys" />
+            <vault:control reference="user_security_profile_field_control__sys" name="user_security_profile_field_control__c" />
+            <vault:field reference="domain_admin__sys" />
+            <vault:field reference="federated_id__sys" />
+            <vault:field reference="security_policy__sys" />
+            <vault:field reference="created_by__v" />
+            <vault:field reference="created_date__v" />
+            <vault:field reference="modified_by__v" />
+            <vault:field reference="modified_date__v" />
+        </vault:detailform>
+    </vault:section>
+    <vault:section title="Groups" name="user_groups_section_control__c" reference="user_groups_section_control__sys" />
+    <vault:section title="Inbox Documents: Sharing" name="user_share_inbox_section_control__c" reference="user_share_inbox_section_control__sys" />
+    <vault:section title="Security Overrides" name="user_security_overrides_section_control__c" reference="user_security_overrides_section_control__sys" />
+    <vault:section title="Delegate Access" name="user_delegate_access_section_control__c" reference="user_delegate_access_section_control__sys" />
+    <vault:section title="Veeva Support" name="user_support_access_section_control__c" reference="user_support_access_section_control__sys" />
+    <vault:section title="Email Preferences" name="email_preferences__c">
+        <vault:detailform type="Two-Columns">
+            <vault:field reference="product_announcement_emails__sys" />
+            <vault:field reference="system_availability_emails__sys" />
+            <vault:field reference="tasks__sys" />
+            <vault:field reference="shared_views__sys" />
+            <vault:field reference="send_as_link__sys" />
+            <vault:field reference="favorite_documents__sys" />
+            <vault:field reference="summary_email_interval__sys" />
+        </vault:detailform>
+    </vault:section>
+    <vault:section title="User Role Setup" name="user_role_setup__c">
+        <vault:relatedObject relationship="user_role_setup__vr" preventRecordCreate="false" modalCreateRecord="false">
+            <vault:field reference="name__v" width="199px" />
+            <vault:field reference="user__v" width="199px" />
+            <vault:field reference="role__v" width="199px" />
+        </vault:relatedObject>
+    </vault:section>
+    <vault:section title="Workflow Timeline" name="workflow_timeline__v">
+        <vault:wftimeline />
+    </vault:section>
+    <vault:section title="Application Licensing" name="application_licensing__c" helpContent="At least one application license type must be selected. If none are selected, all application licenses are set by default.">
+        <vault:detailform type="One-Column">
+            <vault:field reference="license_platformplatform__sys" />
+        </vault:detailform>
+    </vault:section>
+    <vault:section title="Devices" name="mobile_app_registrations__c" reference="mobile_app_registrations_detail_control__sys" />
+    <vault:section title="Search Preferences" name="search_preferences__c" reference="search_preferences_detail_control__sys" />
+</vault:page>

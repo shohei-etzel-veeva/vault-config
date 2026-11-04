@@ -1,0 +1,11 @@
+Vsmfield report_type__sys (
+   label('Report Type'),
+   active(true),
+   description('Represents the Report Type configuration that this report is based on.'),
+   example_values(),
+   synonyms('type'),
+   target('report_type__sys'),
+   target_label('Report Type'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

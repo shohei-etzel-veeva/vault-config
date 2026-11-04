@@ -1,0 +1,12 @@
+RECREATE Notificationtemplate baseapproved__c (
+   label('BASE-approved'),
+   active(true),
+   description(),
+   email_preferences('summary__sys'),
+   referenced_component(),
+   subject('Notification: "${docNameNoLink}" approved, changes not required'),
+   notification('<b>${docName}</b> is now approved.'),
+   email_body('<p>${notificationMessage}</p>'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

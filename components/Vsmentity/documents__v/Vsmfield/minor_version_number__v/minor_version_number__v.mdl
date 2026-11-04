@@ -1,0 +1,13 @@
+Vsmfield minor_version_number__v (
+   label('Minor Version Number'),
+   active(true),
+   description('The minor version number of the document version (the Y in vX.Y). Combine with major_version_number__v for the full version, e.g. 1.0. Use to find or filter documents by version.'),
+   example_values(),
+   synonyms('minor version',
+         'version',
+         'minor'),
+   target('minor_version_number__v'),
+   target_label('Minor Version Number'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

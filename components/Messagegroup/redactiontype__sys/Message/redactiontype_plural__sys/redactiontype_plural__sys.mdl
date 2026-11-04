@@ -1,0 +1,6 @@
+Message redactiontype_plural__sys (
+   label(),
+   active(true),
+   default_value('Redaction Types'),
+   system_managed(false)
+);

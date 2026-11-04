@@ -1,0 +1,13 @@
+Vsmfield pages__v (
+   label('Pages'),
+   active(true),
+   description('The number of pages in the document''s rendition. Use to filter by length or sum total pages.'),
+   example_values(),
+   synonyms('pages',
+         'page count',
+         'number of pages'),
+   target('pages__v'),
+   target_label('Pages'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

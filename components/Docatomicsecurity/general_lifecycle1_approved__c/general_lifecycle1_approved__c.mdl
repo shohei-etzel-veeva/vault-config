@@ -1,0 +1,12 @@
+RECREATE Docatomicsecurity general_lifecycle1_approved__c (
+   label('General Lifecycle-Approved'),
+   active(true),
+   document_lifecycle('Doclifecycle.general_lifecycle1__c'),
+   state('Doclifecyclestate.approved__c'),
+   Docactionsecurity(@Docactionsecurity/approver_hide__c.mdl),
+   Docactionsecurity(@Docactionsecurity/consumer_hide__c.mdl),
+   Docactionsecurity(@Docactionsecurity/coordinator_hide__c.mdl),
+   Docactionsecurity(@Docactionsecurity/editor_hide__c.mdl),
+   Docactionsecurity(@Docactionsecurity/reviewer_hide__c.mdl),
+   Docactionsecurity(@Docactionsecurity/viewer_hide__c.mdl)
+);

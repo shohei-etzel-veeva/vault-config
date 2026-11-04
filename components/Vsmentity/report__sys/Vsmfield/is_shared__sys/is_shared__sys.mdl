@@ -1,0 +1,11 @@
+Vsmfield is_shared__sys (
+   label('Is Shared?'),
+   active(true),
+   description('Boolean field to indicate whether a given report is shared with any users outside of the person who created the report and administrators.'),
+   example_values(),
+   synonyms('sharing'),
+   target('is_shared__sys'),
+   target_label('Is Shared?'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

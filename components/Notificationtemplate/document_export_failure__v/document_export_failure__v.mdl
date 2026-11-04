@@ -1,0 +1,21 @@
+RECREATE Notificationtemplate document_export_failure__v (
+   label('documentExportFail'),
+   active(true),
+   description(),
+   email_preferences('every_occurrence__sys'),
+   referenced_component(),
+   subject('Veeva Vault: Document Export Error (${docNameNoLink})'),
+   notification('<p>Document export failed for ${docName}.</p>
+Contact your Vault Administrator if this issue persists.'),
+   email_body('<p><b>Vault: </b>${vaultName} (${uiBaseExtUrl})
+<br>
+<b>Notification: </b>Document export error</b></p>
+
+<p>${recipientTitle} ${recipientName},</p>
+
+<p>There was an error while preparing your document export for ''${docName}''. If this issue persists, please contact your Vault Administrator for support.</p>
+
+<p><a href="${notificationHome}">Click here to see all your Vault notifications</a> </p>'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

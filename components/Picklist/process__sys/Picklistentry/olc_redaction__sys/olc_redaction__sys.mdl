@@ -1,0 +1,5 @@
+Picklistentry olc_redaction__sys (
+   value('Redaction'),
+   order(15),
+   active(true)
+);

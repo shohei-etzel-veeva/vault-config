@@ -1,0 +1,8 @@
+RECREATE Objectvalidation validation_tracker_child__c.validation_tracker_rule__c (
+   label('Validation Tracker Rule'),
+   active(true),
+   expression('parent_tracker__c = false'),
+   description(),
+   error_message('Error'),
+   error_location('parent_tracker__c')
+);

@@ -1,0 +1,11 @@
+Vsmfield flash_runs_as__sys (
+   label('Runs As'),
+   active(true),
+   description('When a report is scheduled to run as a flash report, this indicates the User who scheduled the report. The Runs As user owns the job associated to the flash report, and all results in the flash report are based on the permissions of the Runs As user.'),
+   example_values(),
+   synonyms('flash owner'),
+   target('flash_runs_as__sys'),
+   target_label('Runs As'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

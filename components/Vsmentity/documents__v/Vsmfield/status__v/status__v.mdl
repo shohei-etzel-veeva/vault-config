@@ -1,0 +1,14 @@
+Vsmfield status__v (
+   label('Status'),
+   active(true),
+   description('The document''s current lifecycle status/state (e.g. Draft, In Review, Approved, In Edit). Use to filter or count documents by where they are in their lifecycle — e.g. how many documents are Approved. IMPORTANT: status__v is the current state; lifecycle__v names which lifecycle the document follows.'),
+   example_values(),
+   synonyms('status',
+         'state',
+         'document status',
+         'stage'),
+   target('status__v'),
+   target_label('Status'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

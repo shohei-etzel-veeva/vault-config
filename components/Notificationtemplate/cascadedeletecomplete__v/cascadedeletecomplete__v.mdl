@@ -1,0 +1,21 @@
+RECREATE Notificationtemplate cascadedeletecomplete__v (
+   label('CascadeDeleteCompletedTemplate'),
+   active(true),
+   description('Cascade Delete Completed Notifications template'),
+   email_preferences('summary__sys'),
+   referenced_component(),
+   subject('Notification: Cascade Delete job has completed'),
+   notification('<p> Your Delete Record job has completed </p>
+<ul>
+<li> ${successCountLink} </li>
+<li> ${failureCountLink} </li>
+<li> Delete ${objectName} record: &quot;${recordName}&quot; including its related records <br>
+${objectHierarchy} </li>
+<li> Start Time: ${startTime} </li>
+<li> Duration : ${duration} </li>
+</ul>
+'),
+   email_body('${notificationMessage}'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

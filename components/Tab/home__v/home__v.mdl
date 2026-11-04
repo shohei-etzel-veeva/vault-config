@@ -1,0 +1,8 @@
+RECREATE Tab home__v (
+   active(true),
+   enable_global_search(false),
+   global_search_placeholder(''),
+   label('Home'),
+   order(1),
+   parent()
+);

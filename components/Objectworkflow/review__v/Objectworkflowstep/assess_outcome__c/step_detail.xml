@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vwf:stepdetails xmlns:vwf="VeevaVault">
+  <vwf:dialog type="task">
+    <vwf:label>Assess Review Outcome</vwf:label>
+    <vwf:controls>
+      <vwf:control name="assess_review_outcome_for_these_document__c" label="Assess Review Outcome for these documents. Review tasks have been completed by all participants." type="instructions">
+        <vwf:instructions>Assess Review Outcome for these documents. Review tasks have been completed by all participants.</vwf:instructions>
+      </vwf:control>
+      <vwf:control name="verdict_public_key__c" type="verdict">
+        <vwf:verdict label="No changes required, Ready for Approval" name="verdict_no_changes_required_ready_for_a__c" />
+        <vwf:verdict label="Changes required, return to originator" name="verdict_changes_required_return_to_orig__c">
+          <vwf:comment label="Comment for changes required" required="false" />
+        </vwf:verdict>
+      </vwf:control>
+      <vwf:control name="date_approval_due_date__c" label="label" type="date">
+        <vwf:datefield type="date" />
+        <vwf:offset>
+          <vwf:amount>0</vwf:amount>
+          <vwf:unit>days</vwf:unit>
+        </vwf:offset>
+      </vwf:control>
+    </vwf:controls>
+  </vwf:dialog>
+  <vwf:assignment participant="workflow_initiator__v" excludeowner="false" />
+  <vwf:assignmentType type="every" />
+  <vwf:notifications />
+  <vwf:reminders />
+  <vwf:completeWithoutViewing value="false" />
+  <vwf:taskRequirement requirement="required" />
+  <vwf:enablePromptExclusionStateTypes value="false" />
+  <vwf:enablePromptInclusionDocTypes value="false" />
+</vwf:stepdetails>

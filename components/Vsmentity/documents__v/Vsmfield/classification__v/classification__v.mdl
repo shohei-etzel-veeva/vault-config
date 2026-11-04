@@ -1,0 +1,12 @@
+Vsmfield classification__v (
+   label('Classification'),
+   active(true),
+   description('The document classification — the third and most specific level under type__v/subtype__v. Not populated for most documents in this Vault. Use to filter to a specific classification when a document type defines one.'),
+   example_values(),
+   synonyms('classification',
+         'document classification'),
+   target('classification__v'),
+   target_label('Classification'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

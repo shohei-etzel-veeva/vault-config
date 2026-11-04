@@ -1,0 +1,6 @@
+Message overlay_text__sys (
+   label(),
+   active(true),
+   default_value('Overlay Text'),
+   system_managed(false)
+);

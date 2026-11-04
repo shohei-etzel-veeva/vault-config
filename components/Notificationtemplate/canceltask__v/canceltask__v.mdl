@@ -1,0 +1,13 @@
+RECREATE Notificationtemplate canceltask__v (
+   label('cancelTask'),
+   active(true),
+   description(),
+   email_preferences('summary__sys'),
+   referenced_component(),
+   subject('Notification: The task "${taskName}" has been canceled'),
+   notification('The task "${taskName}" for <b>${docName}</b> has been canceled.'),
+   email_body('<p>${notificationMessage}</p>
+'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

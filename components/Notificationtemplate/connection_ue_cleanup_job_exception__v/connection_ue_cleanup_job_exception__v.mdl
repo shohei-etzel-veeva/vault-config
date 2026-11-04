@@ -1,0 +1,12 @@
+RECREATE Notificationtemplate connection_ue_cleanup_job_exception__v (
+   label('User Exception Cleanup Job Exception'),
+   active(false),
+   description('Connection exception cleanup job unexpected failure email template.'),
+   email_preferences('every_occurrence__sys'),
+   referenced_component(),
+   subject('Notification: Connection Exception Cleanup Job Failure'),
+   notification('<p><b>Your connection exception cleanup job [${Custom.jobId}] has failed.</b><p>Details:<br/>Reason for Failure: ${Custom.cause}</p></p>'),
+   email_body('${notificationMessage}'),
+   entity_type('object'),
+   notification_category('none__sys')
+);

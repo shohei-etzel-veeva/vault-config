@@ -1,0 +1,8 @@
+Objectworkflowstep start__c (
+   label('Start review workflow'),
+   type('start'),
+   next_steps('Objectworkflowstep.state_change_draft_to_in_review__c'),
+   tags(),
+   step_detail(@step_detail.xml),
+   description()
+);

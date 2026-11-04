@@ -1,0 +1,21 @@
+RECREATE Notificationtemplate office_365_collab_session_ended__v (
+   label('Office 365 Collaboration Session Ended'),
+   active(true),
+   description('Sent to all Editors when a user checks in, which ends the collaboration session for everyone.'),
+   email_preferences('summary__sys'),
+   referenced_component(),
+   subject('Veeva Vault: Edit Session Ended (Office 365)'),
+   notification('<p><b>${checkInUserName}</b> checked in and ended the collaboration session for <b>${docName} (${version})</b> on ${version_creation_date__v}.</p>
+<p>If you made edits after this time, it is recommended that you save a local copy. Open your Office desktop application, go to ''Recent'', click on the yellow triangle for the file you were working on, and then click ''Save a Copy''.</p>'),
+   email_body('<p><b>Vault: </b>${vaultName} (${uiBaseExtUrl})
+<br>
+<b>Notification: </b>Edit Session Ended (Office 365)</b></p>
+
+<p>${recipientTitle} ${recipientName},</p>
+
+<p>${notificationMessage}</p>
+
+<p><a href="${notificationHome}">Click here to see all your Vault notifications</a> </p>'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

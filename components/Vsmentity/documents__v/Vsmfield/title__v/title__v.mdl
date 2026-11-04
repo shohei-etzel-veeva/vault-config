@@ -1,0 +1,14 @@
+Vsmfield title__v (
+   label('Title'),
+   active(true),
+   description('An optional secondary title for the document, distinct from Name and often blank (only ~15% populated here). IMPORTANT: the document''s primary label is name__v — use name__v to identify or search for a document; use title__v only when a question explicitly asks for the Title field.'),
+   example_values('One',
+         'Testing',
+         'Berkeley'),
+   synonyms('title',
+         'subtitle'),
+   target('title__v'),
+   target_label('Title'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

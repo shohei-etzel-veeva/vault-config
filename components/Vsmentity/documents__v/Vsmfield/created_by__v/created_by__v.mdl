@@ -1,0 +1,14 @@
+Vsmfield created_by__v (
+   label('Created By'),
+   active(true),
+   description('The user who created the document (reference to a user). Use to filter or group documents by author/creator.'),
+   example_values(),
+   synonyms('created by',
+         'author',
+         'creator',
+         'who created'),
+   target('created_by__v'),
+   target_label('Created By'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

@@ -1,0 +1,12 @@
+Vsmfield version_creation_date__v (
+   label('Version Creation Date'),
+   active(true),
+   description('The date/time the current version was created. Use for when a specific version was produced — distinct from the document''s original Created Date (document_creation_date__v).'),
+   example_values(),
+   synonyms('version created date',
+         'version date'),
+   target('version_creation_date__v'),
+   target_label('Version Creation Date'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

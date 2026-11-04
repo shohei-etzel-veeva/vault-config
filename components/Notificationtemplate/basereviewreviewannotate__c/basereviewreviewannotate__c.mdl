@@ -1,0 +1,12 @@
+RECREATE Notificationtemplate basereviewreviewannotate__c (
+   label('BASE-Review-ReviewAnnotate'),
+   active(true),
+   description(),
+   email_preferences('every_occurrence__sys'),
+   referenced_component(),
+   subject('New Task: Review and Annotate "${docNameNoLink}"'),
+   notification('Please review <b>${docName}</b>. Your comments should be added into the document as annotations. Following review, the owner will determine the appropriate next steps for this document.'),
+   email_body('You have been assigned a task for <b>${docName}</b>. ${notificationMessage}</p> Due date: ${taskDueDate}<br> Document owner: ${docOwnerName}<br> Workflow owner: ${workflowInitiatorName}<br>'),
+   entity_type('document'),
+   notification_category('tasks__sys')
+);

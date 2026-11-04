@@ -1,0 +1,14 @@
+Vsmfield document_creation_date__v (
+   label('Created Date'),
+   active(true),
+   description('The date/time the document was originally created (its Created Date). Use to filter or sort documents by when they were created, or for ''documents created in <period>'' questions.'),
+   example_values(),
+   synonyms('created date',
+         'creation date',
+         'created',
+         'date created'),
+   target('document_creation_date__v'),
+   target_label('Created Date'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

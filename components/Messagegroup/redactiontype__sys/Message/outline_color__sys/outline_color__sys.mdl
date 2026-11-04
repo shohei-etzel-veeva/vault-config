@@ -1,0 +1,6 @@
+Message outline_color__sys (
+   label(),
+   active(true),
+   default_value('Outline Color'),
+   system_managed(false)
+);

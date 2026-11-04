@@ -1,0 +1,9 @@
+RECREATE Aitooltype agent_action__sys (
+   label('Agent Action'),
+   active(true),
+   admin_configurable(true),
+   configuration_code('Aitooltypeconfigurationcode.com.veeva.vault.system.ai.AgentActionConfigurationToolType'),
+   configuration_layout(),
+   runtime_code('Aitooltyperuntimecode.com.veeva.vault.system.ai.AgentActionRuntimeToolType'),
+   support_custom_action(true)
+);

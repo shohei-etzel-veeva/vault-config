@@ -1,0 +1,12 @@
+RECREATE Notificationtemplate baseapprovedmdw__v (
+   label('BASE-Approved'),
+   active(true),
+   description(),
+   email_preferences('summary__sys'),
+   referenced_component('Object.envelope__sys'),
+   subject('Notification: Documents approved, changes not required'),
+   notification('Documents <b>${multiDocDocumentsList}</b> are now approved.'),
+   email_body('<p>${notificationMessage}</p>'),
+   entity_type('object'),
+   notification_category('none__sys')
+);

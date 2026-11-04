@@ -1,0 +1,14 @@
+Vsmfield latest_version__v (
+   label('Is Latest Version'),
+   active(true),
+   description('Boolean flag marking the current/latest version of a document. Because a document can have many versions, filter latest_version__v = true to count or list current documents and avoid double-counting historical versions.'),
+   example_values(),
+   synonyms('latest version',
+         'current version',
+         'is latest',
+         'most recent'),
+   target('latest_version__v'),
+   target_label('Is Latest Version'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

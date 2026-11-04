@@ -1,0 +1,20 @@
+RECREATE Notificationtemplate ftp_upload_too_large__v (
+   label('Max File Size Exceeded'),
+   active(true),
+   description(),
+   email_preferences('every_occurrence__sys'),
+   referenced_component(),
+   subject('Veeva Vault: FTP Inbox failed to add ''${fileName}'' to ''${docName}'' (maximum file size exceeded)'),
+   notification('FTP Inbox failed to add ''${fileName}'' to ''${docName}'' because the file size (${fileSizeGB}) is larger than the ${limitGB} limit.'),
+   email_body('<p><b>Vault: </b>${vaultName} (${uiBaseExtUrl})
+<br>
+<b>Notification: </b>FTP Inbox failed to add file due to file size</b></p>
+
+<p>${recipientTitle} ${recipientName},</p>
+
+<p>FTP Inbox failed to add ''${fileName}'' to ''${docName}'' because the file size (${fileSizeGB}) is larger than the ${limitGB} limit.</p>
+
+<p><a href="${notificationHome}">Click here to see all your Vault notifications</a> </p>'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

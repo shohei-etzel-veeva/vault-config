@@ -1,0 +1,12 @@
+RECREATE Notificationtemplate baseapprovedwithchangesmdw__v (
+   label('BASE-ApprovedWithChanges'),
+   active(true),
+   description(),
+   email_preferences('every_occurrence__sys'),
+   referenced_component('Object.envelope__sys'),
+   subject('Notification: Documents not approved, changes required'),
+   notification('Documents <b>${multiDocDocumentsList}</b> are not approved because additional changes are required. All comments have been captured as annotations on the documents'),
+   email_body('<p>${notificationMessage}</p>'),
+   entity_type('object'),
+   notification_category('none__sys')
+);

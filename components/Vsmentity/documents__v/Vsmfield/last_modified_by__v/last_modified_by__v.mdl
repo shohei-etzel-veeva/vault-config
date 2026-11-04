@@ -1,0 +1,14 @@
+Vsmfield last_modified_by__v (
+   label('Last Modified By'),
+   active(true),
+   description('The user who last modified the document version. Use to filter or group documents by who last changed them.'),
+   example_values(),
+   synonyms('last modified by',
+         'modified by',
+         'last editor',
+         'who updated'),
+   target('last_modified_by__v'),
+   target_label('Last Modified By'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

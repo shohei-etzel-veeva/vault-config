@@ -1,0 +1,14 @@
+Vsmfield format__v (
+   label('Format'),
+   active(true),
+   description('The file format / MIME type of the document''s source file (e.g. application/pdf, wordprocessingml.document for Word). Use to filter documents by file type such as PDFs or Word files.'),
+   example_values(),
+   synonyms('format',
+         'file format',
+         'file type',
+         'mime type'),
+   target('format__v'),
+   target_label('Format'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

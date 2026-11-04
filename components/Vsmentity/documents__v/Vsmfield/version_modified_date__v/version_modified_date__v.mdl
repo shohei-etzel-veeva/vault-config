@@ -1,0 +1,14 @@
+Vsmfield version_modified_date__v (
+   label('Last Modified Date'),
+   active(true),
+   description('The date/time the document version was last modified (its Last Modified Date). Use to filter or sort by recency of change, or for ''recently updated documents'' questions.'),
+   example_values(),
+   synonyms('last modified date',
+         'modified date',
+         'updated',
+         'last updated'),
+   target('version_modified_date__v'),
+   target_label('Last Modified Date'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

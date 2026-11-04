@@ -1,0 +1,7 @@
+Docactionsecurity editor_hide__c (
+   label('Editor-Hide'),
+   active(true),
+   role('Doclifecyclerole.editor__v'),
+   type('hide__v'),
+   lifecycle_actions('Doclifecyclestateuseraction.approved__c.make_obsolete__c')
+);

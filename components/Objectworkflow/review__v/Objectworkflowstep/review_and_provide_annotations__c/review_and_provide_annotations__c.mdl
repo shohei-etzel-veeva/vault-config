@@ -1,0 +1,8 @@
+Objectworkflowstep review_and_provide_annotations__c (
+   label('Review and provide annotations'),
+   type('contenttask'),
+   next_steps('Objectworkflowstep.assess_outcome__c'),
+   tags(),
+   step_detail(@step_detail.xml),
+   description('Completion of this task indicates that you have conducted review and annotation of these documents".')
+);

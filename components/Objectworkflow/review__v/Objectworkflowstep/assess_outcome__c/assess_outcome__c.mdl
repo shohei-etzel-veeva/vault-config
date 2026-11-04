@@ -1,0 +1,8 @@
+Objectworkflowstep assess_outcome__c (
+   label('Assess outcome'),
+   type('contenttask'),
+   next_steps('Objectworkflowstep.are_changes_required__c'),
+   tags(),
+   step_detail(@step_detail.xml),
+   description('All participants have completed the review process. Please assess the comments and annotations and determine the next state for these documents')
+);

@@ -1,0 +1,13 @@
+Vsmfield size__v (
+   label('Size'),
+   active(true),
+   description('The size of the document''s source file in bytes. Use to find large or small files or to sum storage used.'),
+   example_values(),
+   synonyms('size',
+         'file size',
+         'bytes'),
+   target('size__v'),
+   target_label('Size'),
+   vsm_picklist(),
+   vsm_picklist_local()
+);

@@ -1,0 +1,11 @@
+RECREATE Pagelink process_view_edit__sys (
+   label('ProcessView Edit'),
+   description('Redirects to the ProcessMonitorPage to edit a ProcessView'),
+   url('https://{{Vault.domain}}/ui/#sys/page/{{Page.url_path_name}}?processView={{Object.id}}'),
+   mode('Edit'),
+   page_type('Object'),
+   object('Object.process_view__sys'),
+   active(true),
+   disable_type_select(false),
+   page('Page.process_monitor__sys')
+);

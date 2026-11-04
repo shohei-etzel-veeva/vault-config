@@ -1,0 +1,8 @@
+Objectworkflowstep change__c (
+   label('State Change:In Approval to Approved'),
+   type('contentaction'),
+   next_steps('Objectworkflowstep.notification__c'),
+   tags(),
+   step_detail(@step_detail.xml),
+   description()
+);

@@ -1,0 +1,8 @@
+Objectworkflowstep state_change_in_review_to_draft__c (
+   label('State Change: In Review to Draft'),
+   type('contentaction'),
+   next_steps('Objectworkflowstep.review_completed_changes_required__c'),
+   tags(),
+   step_detail(@step_detail.xml),
+   description()
+);

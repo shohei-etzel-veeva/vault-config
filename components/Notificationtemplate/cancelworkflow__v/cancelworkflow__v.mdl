@@ -1,0 +1,14 @@
+RECREATE Notificationtemplate cancelworkflow__v (
+   label('cancelWorkflow'),
+   active(true),
+   description(),
+   email_preferences('summary__sys'),
+   referenced_component(),
+   subject('Notification: "${docNameNoLink}" workflow has been canceled'),
+   notification('The "${workflowActionName}" workflow for <b>${docName}</b> has been canceled.
+'),
+   email_body('<p>${notificationMessage}</p>
+'),
+   entity_type('document'),
+   notification_category('none__sys')
+);

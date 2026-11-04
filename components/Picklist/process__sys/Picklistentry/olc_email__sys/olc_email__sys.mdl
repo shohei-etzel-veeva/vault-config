@@ -1,0 +1,5 @@
+Picklistentry olc_email__sys (
+   value('Email'),
+   order(8),
+   active(true)
+);
